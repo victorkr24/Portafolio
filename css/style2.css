@@ -1,0 +1,219 @@
+:root {
+  /* colors */
+
+  --blue: #182463;
+  --greeen: #00f890;
+  --blanco: #ffffff;
+  --alt-family: "Inter", sans-serif;
+}
+/* Urilidades */
+
+    
+    .fondo{
+        background-color: #182463;
+    }
+    .contenedor {
+        max-width: 1800px;
+        width: 100%;
+       
+      }
+      @media (min-width: 768px) {
+        .barra {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+      .navegacion a {
+        margin: 50px;
+        margin-top: 25px;
+        display: inline;
+        text-align: center;
+        margin-right: 1rem;
+        color: #d4d9df;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .navegacion :hover {
+        color: #00f890;
+      }
+      .barra img {
+        width: 70px;
+        display: block;
+        margin: 0px auto;
+      }
+      @media (min-width: 768px) {
+        .contenedor{
+          max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+      
+        }
+        .navegacion a {
+            margin: 10px;
+            display: inline;
+            margin-right: 2rem;
+            color: aliceblue;
+            font-weight: 700;
+            font-size: 1rem;
+          }
+          .navegacion a:last-of-type {
+            margin: 0;
+          }
+          .profile {
+            width: 380px;
+        
+            display: block;
+            margin: 0;
+          }
+        }
+        .profile {
+            width: 280px;
+            display: block;
+            margin: 0px;
+          }
+          .texto-header .profile {
+            float: left;
+            
+          }
+        .no-margin{
+            font-size: 15px;
+            margin-top: 30px;
+            color: aliceblue;
+          }
+          .font-weight{
+            font-size: 19px;
+            color: aliceblue;
+            opacity: 70%;
+            margin-top: 25px;
+          }
+          strong{
+            font-weight: 900;
+            color: var(--greeen);
+          }
+          @media (min-width: 768px) {
+            .font-weight {
+              font-size: 25px;
+              
+            }
+            .no-margin{
+              font-size: 20px;
+            }
+          }
+
+
+
+/* Linea del teimpo */
+
+.color{
+    color: antiquewhite;
+}
+.proyecto{
+    color: #00f890;
+}
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+/* Creacion de botones  */
+.round {
+  background-image:url(../img/git\ 2.png);
+  background-repeat:no-repeat;
+  height: 35px;
+  width: 85px;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-position:center;
+  float: left;
+  margin-top: 25px;
+  height: 46.24px;
+  background-color: rgba(29, 220, 8, 0.795); 
+  opacity: 80%;
+  border: 3px solid var(--greeen); 
+  border-radius: 1em;
+  margin-left: 27px; 
+} 
+.round2{
+ height: 40px;
+ width: 130px;
+ display: inline-block;
+
+ cursor: pointer;
+ text-align: center;	
+ text-decoration: none;
+ outline: none;
+ margin-left: 0px;
+ color: #fff;
+ background-color: #00f89134;
+ border: none;
+ border:var(--greeen) 2px solid;
+ border-radius: 15px;
+ 
+}
+.round2:hover {background-color: var(--greeen)}
+
+.round2:active {
+ background-color: var(--greeen);
+ box-shadow: 0 5px var(--blanco);
+ transform: translateY(4px);
+}
+.git{
+ margin-bottom: 10px;
+ width: 95px;
+ position: sticky;
+}
+.git2{
+  
+  width: 36px;
+  position: sticky;
+ }
+.js{
+ /* margin-bottom: 10px; */
+ width: 55px;
+ /* position: sticky; */
+}
+
+/* .cv{
+ position: sticky;
+ margin-top: 45px;
+ width: 70px;
+
+} */
+@media (min-width: 769px) {
+
+
+ .git{
+   
+   margin: 0 auto;
+   
+ }
+ 
+}

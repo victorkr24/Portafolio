@@ -1,0 +1,317 @@
+/* 
+1-Pocionamiento
+2-Modelo de Caja (BOX MODEL)
+3-Tipografia
+4-Temas Visuales
+5-Otros
+*/
+:root {
+  /* colors */
+
+  --blue: #182463;
+  --greeen: #00f890;
+  --blanco: #ffffff;
+  --alt-family: "Inter", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  background-color: var(--blue);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor {
+  max-width: 1800px;
+  width: 98%;
+ 
+}
+@media (min-width: 768px) {
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.navegacion a {
+  margin: 50px;
+  margin-top: 25px;
+  display: inline;
+  text-align: center;
+  /* margin-right: 1rem; */
+  color: var(--blanco);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.navegacion2 a {
+ 
+  margin-top: 25px;
+  display: inline;
+  text-align: center;
+  /* margin-right: 1rem; */
+  color: var(--blanco);
+  
+  font-weight: 700;
+  text-decoration: none;
+}
+.navegacion :hover {
+  color: #00f890;
+}
+.barra img {
+  width: 70px;
+  display: block;
+  margin: 0px auto;
+}
+@media (min-width: 768px) {
+  .contenedor{
+    max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+  }
+  .navegacion a {
+    margin: 10px;
+    display: inline;
+    margin-right: 2rem;
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  .navegacion a:last-of-type {
+    margin: 0;
+  }
+  .profile {
+    width: 380px;
+
+    display: block;
+    margin: 0;
+  }
+}
+.profile {
+  width: 280px;
+  display: block;
+  margin: 0px;
+}
+.texto-header .profile {
+  float: left;
+  
+}
+.no-margin{
+  font-size: 15px;
+  margin-top: 30px;
+  color: var(--blanco);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+.font-weight{
+  font-size: 15px;
+  color: var(--blanco);
+  opacity: 70%;
+  margin-top: 25px;
+}
+strong{
+  font-weight: 900;
+  color: var(--greeen);
+}
+@media (min-width: 768px) {
+  .font-weight {
+    font-size: 25px;
+    
+  }
+  .no-margin{
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+/* Botones */
+.round {
+   background-image:url(../img/git\ 2.png);
+   background-repeat:no-repeat;
+   height: 35px;
+   width: 85px;
+   background-position:center;
+   background-repeat:no-repeat;
+   background-position:center;
+   float: left;
+   margin-top: 25px;
+   height: 46.24px;
+   background-color: rgba(29, 220, 8, 0.795); 
+   opacity: 80%;
+   border: 3px solid var(--greeen); 
+   border-radius: 1em;
+   margin-left: 27px; 
+} 
+.round2{
+  height: 40px;
+  width: 130px;
+  margin-top: 25px;
+  margin-left: 25px;
+  display: inline-block;
+  padding: 6px 17px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  margin-left: 0px;
+  color: #fff;
+  background-color: #00f89134;
+  border: none;
+  border:var(--greeen) 2px solid;
+  border-radius: 15px;
+  box-shadow: 0 9px var(--blanco);
+  
+}
+.round2:hover {background-color: var(--greeen)}
+
+.round2:active {
+  background-color: var(--greeen);
+  box-shadow: 0 5px var(--blanco);
+  transform: translateY(4px);
+}
+.git{
+  margin-bottom: 10px;
+  width: 95px;
+  position: sticky;
+}
+.js{
+  /* margin-bottom: 10px; */
+  width: 55px;
+  /* position: sticky; */
+}
+
+/* .cv{
+  position: sticky;
+  margin-top: 45px;
+  width: 70px;
+
+} */
+@media (min-width: 769px) {
+  .round2 {
+    font-size: 25px;
+    height: 50px;
+    width: 150px;
+    margin-left: 20px;
+    padding: 15px 25px;
+    
+  }
+  .cv{
+    position: absolute;
+    width: 146px;
+    
+  }
+  .git{
+    
+    margin: 0 auto;
+    
+  }
+  
+}
+
+.border{
+  margin-top: 500px;
+  border:5px solid var(--blanco);
+    width:100%;
+}
+.pie{
+  color: var(--blanco);
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+@media (min-width: 769px) {
+  .pie{
+    font-size: 20px;
+    font-weight: 200;
+  }
+  
+}
+
+/* Boton sobre  mi */
+  .boton-mi {
+    height: 50px;
+    width: 130px;
+    margin-top: 25px;
+    margin-left: 25px;
+    display: inline-block;
+    border: 1px solid var(--blanco);
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    margin-left: 10px;
+    
+    background-color: var(--greeen);
+    border:var(--blanco) 2px solid;
+    border-radius: 15px;
+  
+    }
+    .botonr{
+      background-image:url(/img/bostrap.png);
+      background-repeat:no-repeat;
+      background-size: cover;
+      height:50px;
+      width:130px;
+      
+      background-position:center;
+    }
+   .contacto-items{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 5px;
+
+   }
+   .texto-contacto{
+     margin: 10px;
+     color: var(--blanco);
+     font-size: 20px;
+     font-weight: bold;
+     /* text-decoration: underline var(--greeen) solid 2px; */
+     
+   }
+   .texto-contacto a{
+     text-decoration: none;
+   }
+   .texto-contacto:hover{
+     color: #00f890;
+   }
+   .caja{
+    margin: 25px;
+    /* width: 300px;
+    height: 600px; */
+    display: flex;
+    /* Atributos de Boton*-,i */
+    height: 40px;
+    width: 120px;
+    margin-top: 25px;
+    margin-left: 25px;
+    display: inline-block;
+    border: 1px solid var(--blanco);
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    margin-left: 10px;
+    
+    background: linear-gradient(#00f89181, #182463);
+    border:var(--blanco) 3px solid;
+    border-radius: 15px;
+  }
+  .caja img{
+    height: 100%;
+    padding: 5px 15px;
+    
+  }
+  #space-between {
+    justify-content: space-between;
+    color: var(--blanco);
+  }
